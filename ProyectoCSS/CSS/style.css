@@ -1,4 +1,5 @@
 /*Estilos del proyecto*/
+/*GLOBALES*/
 :root {
     --negro: #010101;
     --blanco: #ffffff;
@@ -7,14 +8,24 @@
     --gris: #757575;
 }
 
+html { 
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para box model */
+    scroll-snap-type: y mandatory;
+}
+/*Globales*/
 /*CUERPO*/
+.fondo {
+    background: linear-gradient(to bottom right, var(--negro), var(--secundario));
+    background-repeat: no-repeat;
+}
 /*cuerpo*/
 
 /*TÍTULO*/
 h1 {
     font-size: 3rem;
     text-align: center;
-    color: #000000;
+    color: var(--primario);
 }
 
 .titulo-principal span {
@@ -36,7 +47,7 @@ h1 {
 @media (min-width: 940px) { 
     .nav-principal {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 }
 
@@ -44,21 +55,29 @@ h1 {
     display: block;
     text-align: center;
     color: var(--negro);
+    /*stroke: var(--negro);*/
     text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
     padding: 1rem;
 }
 
-.nav-principal a:hover {
+.nav-principal a:hover, .nav-principal svg:hover {
     background-color: var(--negro);
     color: var(--primario);
+    stroke: var(--primario);
 }
 
+.nav-principal svg:hover {
+    stroke: var(--primario);
+}
 /*Barra de Navegación*/
 
 /*FOOTER*/
-
+footer {
+    text-align: center;
+}
 /*footer*/
+
 
 
