@@ -25,22 +25,6 @@ html {
 }
 /*cuerpo*/
 
-/*TÍTULO*/
-.titulo-principal {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3rem;
-    text-align: center;
-    color: var(--negro);
-    padding: 1rem;
-    margin: auto;
-}
-
-.titulo-principal span {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3.25rem;
-}
-/*Título*/
-
 /*BARRA DE NAVEGACIÓN*/
 .nav-bar {
     background-color: var(--secundario);

@@ -1,0 +1,25 @@
+/*ESTILOS*/
+
+/*GLOBALES*/
+:root {
+    --negro: #000000;
+    --blanco: #ffffff;
+    --primario: #665924;
+    --secundario: #ffde59;
+    --gris: #757575;
+}
+
+html { 
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para box model */
+    scroll-snap-type: y mandatory;    
+}
+/*Globales*/
+
+/*CUERPO*/
+.fondo {
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-align: center;
+}
+/*cuerpo*/
