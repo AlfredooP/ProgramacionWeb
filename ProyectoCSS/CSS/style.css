@@ -1,10 +1,11 @@
-/*Estilos del proyecto*/
+/*ESTILOS*/
+
 /*GLOBALES*/
 :root {
-    --negro: #010101;
+    --negro: #000000;
     --blanco: #ffffff;
-    --primario: #9e9e00;
-    --secundario: #ffff00;
+    --primario: #665924;
+    --secundario: #ffde59;
     --gris: #757575;
 }
 
@@ -12,11 +13,14 @@ html {
     font-size: 62.5%;
     box-sizing: border-box; /* Hack para box model */
     scroll-snap-type: y mandatory;
+    color: var(--blanco);
 }
 /*Globales*/
+
 /*CUERPO*/
 .fondo {
-    background: linear-gradient(to bottom right, var(--negro), var(--secundario));
+    background-color: var(--negro);
+    /* background: linear-gradient(to bottom right, var(--negro), var(--secundario)); */
     background-repeat: no-repeat;
 }
 /*cuerpo*/
@@ -25,7 +29,7 @@ html {
 h1 {
     font-size: 3rem;
     text-align: center;
-    color: var(--primario);
+    color: var(--blanco);
 }
 
 .titulo-principal span {
@@ -35,8 +39,8 @@ h1 {
 
 /*BARRA DE NAVEGACIÓN*/
 .nav-bar {
-    background-color: var(--primario);
-    border-radius: 0 0 1rem 1rem;
+    background-color: var(--secundario);
+    border-radius: 0 0 2rem 2rem;
 }
 
 .nav-principal {
