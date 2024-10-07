@@ -12,14 +12,14 @@
 html { 
     font-size: 62.5%;
     box-sizing: border-box; /* Hack para box model */
-    scroll-snap-type: y mandatory;
-    color: var(--blanco);
+    scroll-snap-type: y mandatory;    
 }
 /*Globales*/
 
 /*CUERPO*/
 .fondo {
     background-color: var(--negro);
+    color: var(--blanco);
     /* background: linear-gradient(to bottom right, var(--negro), var(--secundario)); */
     /* background-repeat: no-repeat; */
 }
@@ -81,6 +81,13 @@ html {
     stroke: var(--primario);
 }
 /*Barra de Navegación*/
+
+/*BANNER*/
+.banner{
+    text-align: center;
+
+}
+/*Banner*/
 
 /*FOOTER*/
 footer {
