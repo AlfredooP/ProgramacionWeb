@@ -12,18 +12,32 @@
 html { 
     font-size: 62.5%;
     box-sizing: border-box; /* Hack para box model */
-    scroll-snap-type: y mandatory;    
+    scroll-snap-type: y mandatory;
+    color: var(--blanco);
 }
 /*Globales*/
 
 /*CUERPO*/
 .fondo {
     background-color: var(--negro);
-    color: var(--blanco);
-    /* background: linear-gradient(to bottom right, var(--negro), var(--secundario)); */
-    /* background-repeat: no-repeat; */
 }
 /*cuerpo*/
+
+/*TÍTULO*/
+.titulo-principal {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--negro);
+    padding: 1rem;
+    margin: auto;
+}
+
+.titulo-principal span {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3.25rem;
+}
+/*Título*/
 
 /*BARRA DE NAVEGACIÓN*/
 .nav-bar {
@@ -66,12 +80,100 @@ html {
 }
 /*Barra de Navegación*/
 
-/*BANNER*/
-.banner{
-    text-align: center;
+/*CONTENEDORES*/
+.banner {
+    background-image: url(../img/BannerTenis.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 856px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) { 
+    .modelos {
+        display: grid;
+        /*grid-template-columns: 300px 300px;
+        grid-template-rows: 200px 800px;*/
+        grid-template-columns: repeat(3, 1fr); /*33.3%*/
+        /*gird: 200px 800px / 300px 300px*/
+        column-gap: 1rem;
+    }
+}
+
+.modelos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sombra {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(255, 222, 89, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(255, 222, 89, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(255, 222, 89, 0.75);
+    background-color: var(--primario);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.diseños {
+    margin-bottom: 1rem;
+}
+
+
+
+@media (min-width: 768px) { 
+    .contenedor-diseños {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 1rem;
+    }
+    .aux:nth-child(1) {
+        grid-row: 1 / 3;
+    }
+    .aux:nth-child(5) {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .aux:nth-child(6) {
+        grid-row: 2;
+        grid-column: 3;
+    }
+    .aux:nth-child(7) {
+        grid-row: 2;
+        grid-column: 4;
+    }
+}
+
+@media (min-width: 768px) { 
+    .contenedor-marcas {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 1rem;
+    }
+}
+
+.contenedor-marcas div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.centrar {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 
 }
-/*Banner*/
+/*Contenedores*/
 
 /*FOOTER*/
 footer {
