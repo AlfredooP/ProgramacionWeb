@@ -73,12 +73,11 @@ html {
 
 .boton {
     background-color: var(--secundario);
-    color: var(--blanco);
+    color: var(--primario);
     padding: 1rem 3rem;
     margin-top: 2rem;
     font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
+    text-transform: uppercase;    
     font-weight: bold;
     border-radius: .5rem;
     width: 90%;
