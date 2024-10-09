@@ -24,27 +24,16 @@ html {
 /*CUERPO*/
 .fondo {
     background-color: var(--negro);
+    text-align: center;
 }
 /*cuerpo*/
 
 /*TÍTULO*/
-.titulo-principal {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3rem;
-    text-align: center;
-    color: var(--negro);
-    padding: 1rem;
-    margin: auto;
-}
-
-.titulo-principal span {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 3.25rem;
-}
-
-h2 {
+.subtitulo {
     text-align: center;
     font-size: 4rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -94,16 +83,6 @@ h3 {
 /*Barra de Navegación*/
 
 /*CONTENEDORES*/
-.banner {
-    background-image: url(../img/BannerTenis.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
-    height: 856px;
-    position: relative;
-    margin-bottom: 2rem;
-}
-
 .contenedor {
     max-width: 120rem;
     margin: 2rem auto;
