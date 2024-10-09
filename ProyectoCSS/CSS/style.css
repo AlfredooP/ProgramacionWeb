@@ -243,10 +243,16 @@ h3 {
     text-align: center;
 }
 
+@media (max-width: 768px) { 
+    .mostrar p, .mostrar h3 {
+        font-size: 1.5rem;
+    }
+}
 /*Contenedores*/
 
 /*FOOTER*/
 footer {
+    font-size: 2rem;
     text-align: center;
 }
 /*footer*/
