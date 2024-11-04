@@ -8,19 +8,22 @@
     <link rel="stylesheet" href="../CSS/normalize.css">
     <link rel="preload" href="../CSS/styleLogin.css" as="style">
     <link href="../CSS/styleLogin.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="fondo">
-    <img src="../img/OSWI-logo-blanco.png" width="30%">
-    <form class="formulario">
+    <img src="../img/OSWI-logo-negro.png" width="30%">
+    <form class="formulario" action="autenticacion.php" method="post">
         <fieldset>
             <legend>Iniciar sesión</legend>
-            <label>Usuario / email:</label>
+            <label for="username"><i class="fas fa-user"></i> Usuario / email:</label>
             <br>
-            <input class="input-text" type="text" placeholder="Ingresa tu usuario">
+            <input class="input-text" type="text" placeholder="Email" name="username" id="username">
             <br>
-            <label>Contraseña:</label>
+            <label for="password"><i class="fas fa-lock"></i> Contraseña:</label>
             <br>            
-            <input class="input-text" type="text" placeholder="Ingresa tu contraseña">
+            <input class="input-text" type="password" placeholder="Contraseña" name="password" id="password">
             <div class="derecha flex"><input class="boton w-sm-100" type="submit" value="Iniciar Sesión"></div>
         </fieldset>
     </form>
