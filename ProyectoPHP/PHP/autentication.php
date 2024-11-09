@@ -28,7 +28,7 @@ if($smtmt = $conexion->prepare('SELECT id, password FROM accounts WHERE username
     // Parametros de enlace de la cadena s
     $smtmt->bind_param('s', $_POST['username']);
     $smtmt->execute();
-}
+} 
 
 // Validar si lo ingresado coincide con la base de datos
 $smtmt->store_result();

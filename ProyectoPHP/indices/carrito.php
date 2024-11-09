@@ -14,4 +14,4 @@ echo "<h1 class=\"subtitulo\"> Carrito de compra </h1>";
 
 include 'footerProd.html';
 
-?>
+?> 
