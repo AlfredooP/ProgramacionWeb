@@ -1,5 +1,6 @@
-<<<<<<< Updated upstream:ProyectoPHP/PHP/producto.php
-<?php include 'includes/header.php';
+<?php
+
+include 'headerProd.html';
 
 // Confirmar sesión
 // session_start();
@@ -8,23 +9,6 @@
 //     header('Location: productos.php');
 //     exit();
 // }
-
-
-
-// include 'footerProd.html';
-
-=======
-<?php
-
-include 'headerProd.html';
-
-// Confirmar sesión
-session_start();
-
-if(!isset($_SESSION['loggedin'])) {
-    header('Location: productos.php');
-    exit();
-}
 
 if (isset($_GET['producto'])) {
     $producto = $_GET['producto'];
@@ -35,5 +19,4 @@ if (isset($_GET['producto'])) {
 
 include 'footerProd.html';
 
->>>>>>> Stashed changes:ProyectoPHP/Indices/productos.php
 ?>

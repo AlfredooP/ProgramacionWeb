@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="preload" href="../CSS/normalize.css" as="style">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="preload" href="../CSS/styleLogin.css" as="style">
+    <link href="../CSS/styleLogin.css" rel="stylesheet">
+</head>
+<body>
+    
+    <form class="formulario" action="admin.php" method="post">
+        <fieldset>
+            <legend>Nueva Marca</legend>
+            <label>Nombre de la Marca: </label>
+            <br>
+            <input type="hidden" name="formulario" value="formMarca">
+            <br>
+            <input class="input-text" type="text" placeholder="Nombre" name="marca" id="marca">
+            <br>
+            <div class="derecha flex"><input class="boton w-sm-100" type="submit" value="Dar de Alta"></div>
+        </fieldset>
+    </form>
+
+<br><br>
+
+    <form class="formulario" action="admin.php" method="post">
+        <fieldset>
+            <legend>Nuevo Modelo</legend>
+            <label>Nombre de la Marca: </label>
+            <br>
+            <input type="hidden" name="formulario" value="formModelo">
+            <br>
+            <input class="input-text" type="text" placeholder="Marca" name="marcaClave" id="marcaClave">
+            <br>
+            <label>Nombre del Modelo: </label>
+            <br>
+            <input class="input-text" type="text" placeholder="Nombre" name="modelo" id="modelo">
+            <br>
+            <div class="derecha flex"><input class="boton w-sm-100" type="submit" value="Dar de Alta"></div>
+        </fieldset>
+    </form>
+
+<br><br>
+
+    <form class="formulario" action="admin.php" method="post">
+        <fieldset>
+            <legend>Nuevo Producto</legend>
+            <label>Nombre de la Marca: </label>
+            <br>
+            <input type="hidden" name="formulario" value="formProducto">
+            <br>
+            <input class="input-text" type="text" placeholder="Marca" name="marcaProd" id="marcaProd">
+            <br>
+            <label>Nombre del Modelo: </label>
+            <br>
+            <input class="input-text" type="text" placeholder="Modelo" name="modeloProd" id="modeloProd">
+            <br>
+            <label>Precio: </label>
+            <br>
+            <input class="input-text" type="number" placeholder="Precio" name="precio" id="precio">
+            <br>
+            <label>Color: </label>
+            <br>
+            <input class="input-text" type="text" placeholder="Color" name="color" id="color">
+            <br>
+            <label>Talla: </label>
+            <br>
+            <input class="input-text" type="number" placeholder="Talla" name="talla" id="talla">
+            <br>
+            <label>Imagen: </label>
+            <br>
+            <input class="input-text" type="text" placeholder="Ruta de la imagen" name="imagen" id="imagen">
+            <br>
+            <div class="derecha flex"><input class="boton w-sm-100" type="submit" value="Dar de Alta"></div>
+        </fieldset>
+    </form>
