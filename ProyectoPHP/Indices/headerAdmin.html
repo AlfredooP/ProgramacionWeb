@@ -20,7 +20,7 @@
             <br>
             <input class="input-text" type="text" placeholder="Nombre" name="marca" id="marca">
             <br>
-            <div class="derecha flex"><input class="boton w-sm-100" type="submit" value="Dar de Alta"></div>
+            <div class="derecha flex"><input class="boton w-sm-100" name="accion" type="submit" value="Dar de Baja">&nbsp;&nbsp;&nbsp;<input class="boton w-sm-100" name="accion" type="submit" value="Dar de Alta"></div>
         </fieldset>
     </form>
 
@@ -39,7 +39,7 @@
             <br>
             <input class="input-text" type="text" placeholder="Nombre" name="modelo" id="modelo">
             <br>
-            <div class="derecha flex"><input class="boton w-sm-100" type="submit" value="Dar de Alta"></div>
+            <div class="derecha flex"><input class="boton w-sm-100" name="accion" type="submit" value="Dar de Baja">&nbsp;&nbsp;&nbsp;<input class="boton w-sm-100" name="accion" type="submit" value="Dar de Alta"></div>
         </fieldset>
     </form>
 
@@ -74,6 +74,51 @@
             <br>
             <input class="input-text" type="text" placeholder="Ruta de la imagen" name="imagen" id="imagen">
             <br>
-            <div class="derecha flex"><input class="boton w-sm-100" type="submit" value="Dar de Alta"></div>
+            <div class="derecha flex"><input class="boton w-sm-100" name="accion" type="submit" value="Dar de Baja">&nbsp;&nbsp;&nbsp;<input class="boton w-sm-100" name="accion" type="submit" value="Dar de Alta"></div>
         </fieldset>
     </form>
+<br><br>
+<form class="formulario" action="admin.php" method="post">
+    <fieldset>
+        <legend>Modificaciones</legend>
+        <input type="hidden" name="formulario" value="formModificaciones">
+        <br>
+        <label>Marca:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Marca" name="modMarca" id="modMarca">
+        <br>
+        <label>Nueva Marca:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Nueva Marca" name="modMarcaNueva" id="modMarcaNueva">
+        <br>
+        <label>Modelo:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Modelo" name="modModelo" id="modModelo">
+        <br>
+        <label>Nuevo Modelo:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Nuevo Modelo" name="modModeloNuevo" id="modModeloNuevo">
+        <br>
+        <label>ID:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="ID a modificar" name="id" id="id">
+        <br>
+        <label>Nuevo Precio:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Precio Nuevo" name="modPrecioNuevo" id="modPrecioNuevo">
+        <br>
+        <label>Nuevo Color:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Nuevo Color" name="modColorNuevo" id="modColorNuevo">
+        <br>
+        <label>Nueva Talla:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Nueva Talla" name="modTallaNueva" id="modTallaNueva">
+        <br>
+        <label>Nueva Imagen:</label>
+        <br>
+        <input class="input-text" type="text" placeholder="Nueva Imagen" name="modImagenNueva" id="modImagenNueva">
+        <br>
+        <div class="derecha flex"><input class="boton w-sm-100" name="accion" type="submit" value="Marca">&nbsp;&nbsp;&nbsp;<input class="boton w-sm-100" name="accion" type="submit" value="Modelo">&nbsp;&nbsp;&nbsp;<input class="boton w-sm-100" name="accion" type="submit" value="Tenis"></div>
+    </fieldset>
+</form>

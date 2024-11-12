@@ -52,7 +52,7 @@ if ($smtmt = $conexion->prepare('SELECT id, password FROM accounts WHERE usernam
                 // Verificar el rol y redireccionar
                 if ($rol === 'admin') {
 
-                    header('Location: admin.php');
+                    header('Location: headerAdmin.html');
                     exit;
                 } else {
                     header('Location: productos.php');

@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-include 'headerA.php';
+require 'headerA.php';
 
 function altaCuenta($mysqli, $nombre, $contra, $email): bool {
     $sql = "INSERT INTO `accounts` (`username`, `password`, `email`) VALUES (?, ?, ?)";

@@ -13,7 +13,7 @@ html {
     font-size: 62.5%;
     box-sizing: border-box; /* Hack para box model */
     scroll-snap-type: y mandatory;    
-}
+} 
 /*Globales*/
 
 /*CUERPO*/
@@ -53,7 +53,7 @@ html {
 .formulario label{
     font-size: 2rem;
     color: var(--secundario);
-    padding: 0.5 rem;
+    padding: 4rem;
 }
 
 @media (max-width: 768px) { 
@@ -86,7 +86,6 @@ html {
     border: none;
 }
 
-
 @media (min-width: 768px) { 
     .boton {
         width: auto;
@@ -94,9 +93,8 @@ html {
 }
 
 .boton:hover {
-    cursor: pointer;
     background-color: var(--negro);
-    color: var(--primario);
+    cursor: pointer;
 }
 
 .flex {
