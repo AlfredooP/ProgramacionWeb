@@ -2,6 +2,8 @@
 
 require 'headerProd.html';
 
+include 'headerCompra.html';
+
 echo "<h1 class=\"subtitulo\"> Tu compra total:";
 echo "<br>$".$_GET['total']." MXN<br>Estas por comprar:</h1>";
 echo "<h1 class=\"fondo\">";
@@ -34,11 +36,14 @@ if (isset($_GET['total']) && isset($_GET['json'])) {
         
     }
     echo "<br><a class=\"boton\" href=\"login.html\">¿Quieres iniciar sesion?</a><br>";
-    echo "<br><a class=\"boton\" href=\"\">Pagar con PayPal</a><br>";
-    echo "<br><a class=\"boton\" href=\"\">Generar recibo en PDF</a><br>";
+    //echo "<br><a class=\"boton\" href=\"\">Pagar con PayPal</a><br>";
+    echo "<br><a class=\"boton\" href=\"pdf.php\">Generar recibo en PDF</a><br>";
     echo "</h1>";
 }
 else{
-    echo "No fue posible calcular el total";
+    //echo "No fue posible calcular el total";
 }
+
+include 'footerCompra.html';
+
 ?>
