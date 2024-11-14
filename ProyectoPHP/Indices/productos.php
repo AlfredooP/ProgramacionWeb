@@ -1,6 +1,7 @@
 <?php
 
 include 'headerProd.html';
+echo "<head><title>OSWI - Productos</title></head>";
 
 // Confirmar sesión
 // session_start();
@@ -27,7 +28,7 @@ if (isset($_GET['producto'])) {
     echo "$".$tenis["precio"]." MXN<br>"; 
     echo "<img src=\"../img/".$tenis["imagen"]."\" width=\"10%\">";
     echo "<br><a class=\"boton\" href=\"carrito.php?producto=".$tenis["id"]."\">Agregar al Carrito</a>";
-    echo "<br><a class=\"boton\" href=\"compra.php?total=".$tenis["precio"]."\">Comprar</a><br></h1>";
+    echo "<br><a class=\"boton\" href=\"compra.php?total=".$tenis["precio"]."&&id=".$tenis["id"]."\">Comprar</a><br></h1>";
     mysqli_close($conexion);
 } else {
     //echo "<h1 class=\"subtitulo\"> Esta usted viendo todos los productos </h1>";
@@ -42,7 +43,7 @@ if (isset($_GET['producto'])) {
         echo "$".$tenis["precio"]." MXN<br>";
         echo "<img src=\"../img/".$tenis["imagen"]."\" width=\"10%\">";
         echo "<br><a class=\"boton\" href=\"carrito.php?producto=".$tenis["id"]."&eliminar=false\">Agregar al Carrito</a>";
-        echo "<br><a class=\"boton\" href=\"compra.php?total=".$tenis["precio"]."\">Comprar</a><br><br></h1>";
+        echo "<br><a class=\"boton\" href=\"compra.php?total=".$tenis["precio"]."&&id=".$tenis["id"]."\">Comprar</a><br><br></h1>";
     }
     mysqli_close($conexion);
 }

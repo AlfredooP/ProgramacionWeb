@@ -7,8 +7,8 @@ include 'headerCompra.html';
 echo "<h1 class=\"subtitulo\"> Tu compra total:";
 echo "<br>$".$_GET['total']." MXN<br>Estas por comprar:</h1>";
 echo "<h1 class=\"fondo\">";
-if (isset($_GET['total']) && isset($_GET['json'])) {
-    $id = $_GET['json'];
+if (isset($_GET['total']) && isset($_GET['id'])) {
+    $id = $_GET['id'];
     $conexion = mysqli_connect("localhost", "root", "", "tenis", 3306) or die("Problemas con la conexión");
 
     if($id == 0){
@@ -24,7 +24,7 @@ if (isset($_GET['total']) && isset($_GET['json'])) {
         }
     }
     else{
-        $consulta = "SELECT  c.id, c.precio, c.color, c.talla, ma.nombre as 'marca', mo.nombre as 'modelo', c.imagen FROM carrito c, marca ma, modelo mo WHERE c.modelo = mo.id and c.marca = ma.id and c.id = ".$id;
+        $consulta = "SELECT  t.id, t.precio, t.color, t.talla, ma.nombre as 'marca', mo.nombre as 'modelo', t.imagen FROM tenis t, marca ma, modelo mo WHERE t.modelo = mo.id and t.marca = ma.id and t.id = ".$id;
         $resultado = mysqli_query($conexion, $consulta);
         $tenis = mysqli_fetch_assoc($resultado);
         echo $tenis["modelo"]."<br>";

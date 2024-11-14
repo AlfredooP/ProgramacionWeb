@@ -1,6 +1,7 @@
 <?php
 
 require 'headerProd.html';
+echo "<title>OSWI - Carrito</title>";
 
 // function eliminarCarrito($id): bool
 // {
@@ -12,17 +13,18 @@ require 'headerProd.html';
 // }
 
 $conexion = mysqli_connect("localhost", "root", "", "tenis", 3306) or die("Problemas con la conexión");
+// $arrIds = [];
 echo "<h1 class=\"subtitulo\"> Carrito de compra </h1>";
 echo "<h1 class=\"fondo\">";
 
 if (isset($_GET['producto']) && isset($_GET['eliminar']) && $_GET['eliminar'] == 'false') {
     $producto = $_GET['producto'];
-    $consulta = "INSERT INTO carrito (SELECT * FROM tenis WHERE id = '" . $producto . "');";
+    $consulta = "INSERT INTO carrito (id, precio, color, talla, marca, modelo, imagen, cantidad) SELECT id, precio, color, talla, marca, modelo, imagen, 1 FROM tenis WHERE id = '" . $producto . "';";
     $resultado = mysqli_query($conexion, $consulta);
 }
 else if (isset($_GET['producto']) && !isset($_GET['eliminar'])) {
     $producto = $_GET['producto'];
-    $consulta = "INSERT INTO carrito (SELECT * FROM tenis WHERE id = '" . $producto . "');";
+    $consulta = "INSERT INTO carrito (id, precio, color, talla, marca, modelo, imagen, cantidad) SELECT id, precio, color, talla, marca, modelo, imagen, 1 FROM tenis WHERE id = '" . $producto . "';";
     $resultado = mysqli_query($conexion, $consulta);
 }
 else if (isset($_GET['producto']) && isset($_GET['eliminar']) && $_GET['eliminar'] == 'true'){
@@ -31,7 +33,7 @@ else if (isset($_GET['producto']) && isset($_GET['eliminar']) && $_GET['eliminar
     $resultado = mysqli_query($conexion, $consulta);
 }
 
-$consulta = "SELECT  c.id, c.precio, c.color, c.talla, ma.nombre as 'marca', mo.nombre as 'modelo', c.imagen FROM carrito c, marca ma, modelo mo WHERE c.modelo = mo.id and c.marca = ma.id;";
+$consulta = "SELECT  c.id, c.precio, c.color, c.talla, ma.nombre as 'marca', mo.nombre as 'modelo', c.imagen, c.cantidad FROM carrito c, marca ma, modelo mo WHERE c.modelo = mo.id and c.marca = ma.id;";
 $resultado = mysqli_query($conexion, $consulta);
 $total = 0; $numProd = 0;
 
@@ -40,10 +42,11 @@ while ($tenis = mysqli_fetch_assoc($resultado)) {
     echo "Color(es): ".$tenis["color"]."<br>";   
     echo "Talla: ".$tenis["talla"]."(MX)<br>";
     echo "Marca: ".$tenis["marca"]."<br>";
+    echo "Cantidad: ".$tenis["cantidad"]." pieza(s)<br>";
     echo "$".$tenis["precio"]." MXN<br>"; 
     echo "<img src=\"../img/" . $tenis["imagen"] . "\" width=\"10%\">";
     echo "<br><a class=\"boton\" href=\"carrito.php?producto=".$tenis["id"]."&eliminar=true\">Borrar del Carrito</a>";
-    echo "<br><a class=\"boton\" href=\"compra.php?total=".$tenis["precio"]."&&json=".$tenis["id"]."\">Comprar</a><br><br>";
+    echo "<br><a class=\"boton\" href=\"compra.php?total=".$tenis["precio"]."&&id=".$tenis["id"]."\">Comprar</a><br><br>";
     $total += $tenis["precio"];
     $numProd += 1;
 }
@@ -54,7 +57,7 @@ if($numProd == 0){
 else{
     echo "Total de productos: ".$numProd;
     echo "<br>Total a pagar: $".$total."MXN";
-    echo "<br><a class=\"boton\" href=\"compra.php?total=".$total."&&json=0\">Comprar todo</a><br>";
+    echo "<br><a class=\"boton\" href=\"compra.php?total=".$total."&&id=0\">Comprar todo</a><br>";
 }
 
 
