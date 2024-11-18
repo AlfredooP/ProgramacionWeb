@@ -1,9 +1,6 @@
 <?php
-
 require 'headerProd.html';
 echo "<title>OSWI - Carrito</title>";
-echo "<h1 class=\"subtitulo\"> Carrito de compra </h1>";
-echo "<h1 class=\"fondo\">";
 
 $conexion = mysqli_connect("localhost", "root", "", "tenis", 3306) or die("Problemas con la conexión"); 
 
@@ -33,29 +30,34 @@ $resultado = mysqli_query($conexion, $consulta);
 $total = 0;
 $numProd = 0;
 
+echo "<h1 class=\"subtitulo\">Carrito de compra</h1>";
+
 while ($tenis = mysqli_fetch_assoc($resultado)) {
-    echo $tenis["modelo"] . "<br>";
+    echo "<main class=\"contenedorP\"><h1 class=\"producto\">";
+    echo "<p class=\"tituloP\">".$tenis["modelo"] . "<br></p>";
     echo "Color(es): " . $tenis["color"] . "<br>";
     echo "Talla: " . $tenis["talla"] . "(MX)<br>";
     echo "Marca: " . $tenis["marca"] . "<br>";
-    echo "Cantidad: " . $tenis["cantidad"] . " pieza(s)<br>";
-    echo "$" . $tenis["precio"] . " MXN<br>";
-    echo "<img src=\"../img/" . $tenis["imagen"] . "\" width=\"10%\">";
-    echo "<br><a class=\"boton\" href=\"carrito.php?producto=" . $tenis["id"] . "&eliminar=true\">Borrar del Carrito</a>";
-    echo "<br><a class=\"boton\" href=\"compra.php?total=" . $tenis["precio"]*$tenis["cantidad"] . "&&id=" . $tenis["id"] . "\">Comprar</a><br><br>";
+    echo "Cantidad a comprar: " . $tenis["cantidad"] . "<br>";
+    echo "<p class=\"precioP\">$" . $tenis["precio"] . " MXN<br></p>";
+    echo "<img class=\"imgP\"src=\"../img/" . $tenis["imagen"] . "\" width=\"70%\">";
+    echo "<br><a class=\"botonP\" href=\"carrito.php?producto=" . $tenis["id"] . "&eliminar=true\">Borrar del Carrito</a>";
+    echo "<br><a class=\"botonP\" href=\"compra.php?total=" . $tenis["precio"]*$tenis["cantidad"] . "&&id=" . $tenis["id"] . "\">Comprar</a><br><br>";
     $total += $tenis["precio"] * $tenis["cantidad"];
     $numProd += 1 * $tenis["cantidad"];
+    echo "</h1></main>";
 }
 if ($numProd == 0) {
-    echo "El carrito esta vacio";
-    echo "<br><a class=\"boton\" href=\"productos.php\">Agrega un producto aqui</a>";
+    echo "<h2>El carrito esta vacio!</h2>";
+    echo "<h1 class=\"producto\"><br><a class=\"botonP\" href=\"productos.php\">Agrega un producto aqui</a></h1>";
 } else {
-    echo "Total de productos: " . $numProd;
-    echo "<br>Total a pagar: $" . $total . "MXN";
-    echo "<br><a class=\"boton\" href=\"compra.php?total=" . $total . "&&id=0\">Comprar todo</a><br>";
+    echo "<main class=\"contenedorP\"><h2>";
+    echo "<br>Total de productos: " . $numProd;
+    echo "<br>Total a pagar: $" . $total . " MXN";
+    echo "<br><a class=\"botonP\" href=\"compra.php?total=" . $total . "&&id=0\">Comprar todo</a><br><br>";
+    echo "</h2></main>";
 }
 
-echo "</h1>";
 mysqli_close($conexion);
-
-include 'footerProd.html';
+require 'footerProd.html';
+?>

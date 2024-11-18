@@ -63,7 +63,7 @@ if ($smtmt = $conexion->prepare('SELECT id, password FROM accounts WHERE usernam
             }
         } else {
             // Contraseña incorrecta
-            header('Location: login.html');
+            header('Location: login.html');            
             exit;
         }
     } else {

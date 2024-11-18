@@ -63,6 +63,4 @@ if ($username != "" && $correo != "" && $password != "") {
 // Cierra la conexión
 $mysqli->close();
 
-include 'footerA.php';
-
 ?>

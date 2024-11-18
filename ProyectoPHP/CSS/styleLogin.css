@@ -94,13 +94,17 @@ html {
 .formulario label{
     font-size: 2rem;
     color: var(--secundario);
-    padding: 4rem;
+    padding-left: 4rem;
 }
 
 @media (max-width: 768px) { 
     .formulario {
         width: auto;
     }
+}
+
+.formulario a{
+    color: var(--secundario);
 }
 
 .input-text{
@@ -127,15 +131,15 @@ html {
     border: none;
 }
 
+.boton:hover {
+    background-color: var(--negro);
+    cursor: pointer;
+}
+
 @media (min-width: 768px) { 
     .boton {
         width: auto;
     }
-}
-
-.boton:hover {
-    background-color: var(--negro);
-    cursor: pointer;
 }
 
 .flex {
@@ -156,3 +160,10 @@ html {
     }
 }
 /*Formulario*/
+
+/*FOOTER*/
+footer{
+    font-size: 1.8rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*Footer*/

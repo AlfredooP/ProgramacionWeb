@@ -15,7 +15,6 @@ html {
     scroll-snap-type: y mandatory;
     color: var(--blanco);
 }
-
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -26,6 +25,7 @@ html {
     background-color: var(--negro);
     text-align: center;
 }
+
 /*cuerpo*/
 
 /*TÍTULO*/
@@ -34,10 +34,6 @@ html {
     font-size: 4rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;    
-}
-
-h3 {
-    text-align: center;
 }
 /*Título*/
 

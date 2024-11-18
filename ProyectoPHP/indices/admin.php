@@ -1,6 +1,6 @@
 <?php
 declare(strict_types = 1);
-include 'headerAdmin.html';
+require 'headerAdmin.html';
 
 echo "<b>Bienvenido de nuevo mi admin</b>";
 
