@@ -2,7 +2,7 @@
 declare(strict_types = 1);
 require 'headerAdmin.html';
 
-echo "<b>Bienvenido de nuevo mi admin</b>";
+// echo "<b>Bienvenido de nuevo mi admin</b>";
 
 // Dar de alta una marca
 function altaMarca($nombreMarca) : string {
@@ -209,6 +209,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-include 'footerAdmin.html';
+// include 'footerAdmin.html';
 
 ?>

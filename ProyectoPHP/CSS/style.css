@@ -165,6 +165,15 @@ html {
     justify-content: space-evenly;
 }
 
+@media (min-width: 768px) { 
+    .marcas {
+        grid-template-rows: repeat(5, 1fr);
+        row-gap: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
 .marcas .iconos {
     height: 20rem;
     width: 20rem;
