@@ -3,12 +3,12 @@
 declare(strict_types=1);
 require 'headerA.php';
 
-function altaCuenta($mysqli, $nombre, $contra, $email): bool {
-    $sql = "INSERT INTO `accounts` (`username`, `password`, `email`) VALUES (?, ?, ?)";
+function altaCuenta($mysqli, $nombre, $contra, $email, $nombres, $apellidos, $edad, $telefono): bool {
+    $sql = "INSERT INTO `accounts` (`username`, `password`, `email`, `nombres`, `apellidos`, `edad`, `telefono`) VALUES (?, ?, ?, ?, ?, ?, ?)";
     $stmt = $mysqli->prepare($sql);
 
     if ($stmt) {
-        $stmt->bind_param("sss", $nombre, $contra, $email);
+        $stmt->bind_param("sssssss", $nombre, $contra, $email, $nombres, $apellidos, $edad, $telefono);
         
         try {
             return $stmt->execute();
@@ -40,9 +40,14 @@ $username = $_POST["username"];
 $correo = $_POST["email"];
 $password = $_POST["password"];
 
+$nombres = $_POST["nombre"];
+$apellidos = $_POST["apellido"];
+$edad = $_POST["edad"];
+$telefono = $_POST["telefono"];
+
 if ($username != "" && $correo != "" && $password != "") {
     try {
-        if (altaCuenta($mysqli, $username, $password, $correo)) {
+        if (altaCuenta($mysqli, $username, $password, $correo, $nombres, $apellidos, $edad, $telefono)) {
             // Redirige a login si fue exitoso
             header("Location: login.html");
             exit();

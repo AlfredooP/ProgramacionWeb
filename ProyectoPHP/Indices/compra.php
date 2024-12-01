@@ -61,7 +61,7 @@ if (isset($_GET['total']) && isset($_GET['id'])) {
     }
     echo "<br><a class=\"botonP\" href=\"login.html\">¿Quieres iniciar sesion?</a>";
     echo "<br><a class=\"botonP\" href=\"pdf.php\">Generar recibo en PDF</a><br><br>";
-    exit;
+    //exit;
     echo "</h1></main>";
 }
 
