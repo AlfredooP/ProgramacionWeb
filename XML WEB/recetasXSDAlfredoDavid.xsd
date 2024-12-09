@@ -1,0 +1,33 @@
+﻿<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="recetas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="receta" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ingrediente" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="nombre" use="optional"/>
+                      <xs:attribute type="xs:string" name="cantidad" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="paso" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="nombre" use="optional"/>
+            <xs:attribute type="xs:string" name="tipo" use="optional"/>
+            <xs:attribute type="xs:string" name="calorias" use="optional"/>
+            <xs:attribute type="xs:string" name="dificultad" use="optional"/>
+            <xs:attribute type="xs:string" name="tiempo" use="optional"/>
+            <xs:attribute type="xs:string" name="elementos" use="optional"/>
+            <xs:attribute type="xs:string" name="emplatado" use="optional"/>
+            <xs:attribute type="xs:string" name="origen" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE recetas SYSTEM "recetasAlfredoDavid.dtd">
+<recetas>
+    <receta nombre="Lasaña Horneada" tipo="Plato fuerte" calorias="348.5 kcal por porcion" dificultad="Facil" tiempo="42mins" elementos="Horno, microondas" emplatado="Plato extendido" origen="https://www.recetasnestle.com.mx/recetas/lasana-horneada">
+
+        <ingrediente nombre="Jitomate en cuartos" cantidad="10"/>
+        <ingrediente nombre="Aceite de oliva" cantidad="3 Cucharadas"/>
+        <ingrediente nombre="Aceite de oliva" cantidad="3 Cucharadas"/>
+        <ingrediente nombre="Cebolla en trozos" cantidad="1/4"/>
+        <ingrediente nombre="Diente de Ajo" cantidad="2"/>
+        <ingrediente nombre="Concentrado de Tomate con Pollo" cantidad="1 Cubo"/>
+        <ingrediente nombre="Sal con cebolla en polvo" cantidad="1/2 Cucharadita"/>
+        <ingrediente nombre="Agua" cantidad="1 Taza"/>
+        <ingrediente nombre="Finas hierbas" cantidad="1 1/2 Cucharadas"/>
+        <ingrediente nombre="Pimienta negra recien molida" cantidad="1/4 Cucharadita"/>
+        <ingrediente nombre="Aceite vegetal" cantidad="2 Cucharadas"/>
+        <ingrediente nombre="Cebolla picada finamente" cantidad="1 Cucharada"/>
+        <ingrediente nombre="Ajo picado finamente" cantidad="1 Cucharadita"/>
+        <ingrediente nombre="Carne molida de res" cantidad="600 Gramos"/>
+        <ingrediente nombre="Sal con cebolla en polvo" cantidad="1 Cucharada"/>
+        <ingrediente nombre="Salsa de soya" cantidad="1 Cucharada"/>
+        <ingrediente nombre="Salsa tipo inglesa" cantidad="3 Cucharadas"/>
+        <ingrediente nombre="Champiñones rebanados" cantidad="250 Gramos"/>
+        <ingrediente nombre="Pasta para lasaÃ±a precocida" cantidad="9 Laminas"/>
+        <ingrediente nombre="Queso tipo manchego" cantidad="200 Gramos"/>
+
+        <paso>Horno precalentado a 200Â°c</paso>
+        <paso>Para la salsa, coloca los jitomates en una charola con el aceite de oliva, la cebolla
+            y el ajo; hornea a 200 Â°C de 45 a 50 minutos o hasta que estén dorados. Licúa los
+            jitomates, la cebolla y los ajos rostizados con el Concentrado de Tomate con Pollo la
+            sal con cebolla, el agua, las hierbas finas y la pimienta.</paso>
+        <paso>Para el relleno, calienta el aceite y fríe la cebolla con el ajo hasta que cambien de
+            color, añade la carne, la sal con cebolla, la salsa de soya, la Salsa Tipo Inglesa y los
+            champiñones; mezcla y cocina hasta que la carne esté cocida.</paso>
+        <paso>En un refractario engrasado con un poco de aceite, coloca una cucharada de salsa, una
+            capa de láminas de lasaña precocida, una de relleno, una de salsa y queso rallado;
+            repite el procedimiento hasta terminar con todos los ingredientes. Por último, termina
+            con una capa de queso tipo manchego. Hornea a 200 °C de 20 a 25 minutos. Ofrece.</paso>
+
+    </receta>
+    
+    <receta nombre="Cheesecake de Chocolate Abuelita" tipo="Postre" calorias="445.6 kcal por porcion" dificultad="Facil" tiempo="67mins" elementos="Cazo, Aro Pastelero, Batidora, Tenedor, Nevera, Papel Aluminio, Batidora de Mano" emplatado="Plato de postre" origen="https://www.recetasnestle.com.mx/recetas/cheesecake-de-chocolate-abuelita-2">
+        
+      <ingrediente nombre="Galletas María molidas" cantidad="30 piezas"/>
+      <ingrediente nombre="Mantequilla derretida" cantidad="1/2 barra"/>
+      <ingrediente nombre="Queso Crema" cantidad="380 gramos"/>
+      <ingrediente nombre="Leche Condensada" cantidad="2/3 de taza"/>
+      <ingrediente nombre="Leche Evaporada" cantidad="1 taza"/>
+      <ingrediente nombre="Media Crema" cantidad="1 taza"/>
+      <ingrediente nombre="Chocolate de mesa Abuelita" cantidad="2 tabletas"/>
+      <ingrediente nombre="Grenetina hidratada" cantidad="14 gramos en 1/2 taza de agua"/>
+      <ingrediente nombre="Chocolate Abuelita granulado" cantidad="3/4 de taza"/>
+      <ingrediente nombre="Mantequilla derretida" cantidad="2 cucharadas"/>
+      <ingrediente nombre="Media Crema" cantidad="190 gramos"/>
+      <ingrediente nombre="Grenetida hidratada" cantidad="14 gramos en 1/4 de taza de agua"/>
+      <ingrediente nombre="Frutos Rojos" cantidad="1/2 taza"/>
+      <ingrediente nombre="Menta fresca" cantidad="5 hojas"/>
+      
+      <paso>Forra el aro pastelero con aluminio en la base y acetato en las paredes</paso>
+      <paso>Mezcla las galletas María con media barra de mantequilla, vertiendolas en el aro y presionando ligeramente para formar una costra y refrigerar</paso>
+      <paso>Ralla las dos tabletas de chocolate abuelita</paso>
+      <paso>Para el relleno, bate el queso hasta acremar, agrega la bolsita de Leche Condesada, 1 taza de Leche Evaporada  
+      la lata de Media Crema, las tabletas de Chocolate para Mesa Abuelita previamente ralladas y 14 gramos de grenetina disuelta.</paso>
+      <paso>Con la base ya refrigerada vertir el relleno preparado sobre ella para refrigerar hasta que enfirmezca</paso>
+      <paso>Para la cobertura, mezcla ½ taza de Chocolate Abuelita Granulado con 2 cucharadas de mantequilla, el envase de Media Crema y 14 gramos de grenetina disuelta</paso>
+      <paso>Con el cheesecake ya firme, vierte la cobertura sobre el y refrigera un momento mas, decora con los frutos rojos y hojas de menta y finalmente divide en porciones</paso>
+    
+  </receta>    
+    
+    <receta nombre="Pollo con Mole" tipo="Plato fuerte" calorias="411 kcal por porcion" dificultad="Intermedia" tiempo="30mins" elementos="Olla, Sartén, Licuadora, Olla de Barro" emplatado="Plato extendido" origen="https://cheforopeza.com.mx/pollo-con-mole/">
+    
+    <ingrediente nombre="Pollo" cantidad="6 piezas"/>
+    <ingrediente nombre="Pimienta Gorda" cantidad="2 piezas"/>
+    <ingrediente nombre="Hoja de Clinatro" cantidad="1/2 taza"/>
+    <ingrediente nombre="Chile Ancho" cantidad="5 piezas"/>
+    <ingrediente nombre="Chile Guajillo" cantidad="3 piezas"/>
+    <ingrediente nombre="Cebolla" cantidad="1 pieza"/>
+    <ingrediente nombre="Anís Estrella" cantidad="1 pieza"/>
+    <ingrediente nombre="Almendras" cantidad="1/4 taza"/>
+    <ingrediente nombre="Uvas Pasas" cantidad="2 cucharadas"/>
+    <ingrediente nombre="Manteca Vegetal" cantidad="1 cucharada"/>
+    <ingrediente nombre="Sal" cantidad="1 pizca"/>
+    <ingrediente nombre="Raja de Canela" cantidad="1 pizca"/>
+    <ingrediente nombre="Agua" cantidad="Cantidad necesaria"/>
+    <ingrediente nombre="Diente de Ajo" cantidad="1 pieza"/>
+    <ingrediente nombre="Manteca Vegetal" cantidad="1/2 cucharada"/>
+    <ingrediente nombre="Chile Pasilla" cantidad="7 piezas"/>
+    <ingrediente nombre="Tomate" cantidad="1 pieza"/>
+    <ingrediente nombre="Clavo" cantidad="3 piezas"/>
+    <ingrediente nombre="Tomillo" cantidad="1 cucharada"/>
+    <ingrediente nombre="Ajonjolí" cantidad="3 cucharadas"/>
+    <ingrediente nombre="Tortillas de Maíz" cantidad="1/2 pieza"/>
+    <ingrediente nombre="Chocolate de Mesa" cantidad="2 barras"/>
+    <ingrediente nombre="Pimienta" cantidad="1 pizca"/>
+    
+    <paso>Lava bien las piezas de pollo y ponlas a cocer en una olla con agua, ajo, pimienta y cilantro.</paso>
+    <paso>Una vez listas, reserva el caldo.</paso>
+    <paso>Para hacer el mole, calienta la manteca en un sartén y fríe ligeramente los chiles, la cebolla y el tomate.</paso>
+    <paso>Una vez que tomen color mezcla en el vaso de tu licuadora junto con las especias, almendras, ajonjolí, uvas pasas, bolillo, tortillas de maíz y un poco de caldo. Debe quedarte una mezcla ligeramente espesa.</paso>
+    <paso>Para hacerlo bien tradicional, derrite un poco más de manteca en una olla de barro, vacía el mole y cocina a fuego lento.</paso>
+    <paso>Agrega el chocolate, deja que se funda, reafirma los sabores con un toque de sal y pimienta.</paso>
+    <paso>Desgrasa el mole, agrega las piezas de pollo y sigue cocinando un par de minutos más para que se llenen de todo el sabor.</paso>
+    <paso>Sirve el pollo, baña con el mole y decora espolvoreando un poco de ajonjolí blanco.</paso>
+    
+    </receta>
+</recetas>

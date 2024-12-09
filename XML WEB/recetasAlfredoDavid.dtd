@@ -1,0 +1,25 @@
+<!ELEMENT recetas (receta*)>
+<!ELEMENT receta (ingrediente+, paso+)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT ingrediente (#PCDATA)>
+<!ELEMENT calorias (#PCDATA)>
+<!ELEMENT paso (#PCDATA)>
+<!ELEMENT dificultad (#PCDATA)>
+<!ELEMENT tiempo (#PCDATA)>
+<!ELEMENT elemento (#PCDATA)>
+<!ELEMENT emplatado (#PCDATA)>
+<!ELEMENT origen (#PCDATA)>
+
+<!ATTLIST receta nombre CDATA #REQUIRED>
+<!ATTLIST receta tipo CDATA #REQUIRED>
+<!ATTLIST receta calorias CDATA #IMPLIED>
+<!ATTLIST receta dificultad CDATA #REQUIRED>
+<!ATTLIST receta tiempo CDATA #REQUIRED>
+<!ATTLIST receta elementos CDATA #IMPLIED>
+<!ATTLIST receta emplatado CDATA #REQUIRED>
+<!ATTLIST receta origen CDATA #REQUIRED>
+
+<!ATTLIST ingrediente nombre CDATA #REQUIRED>
+<!ATTLIST ingrediente cantidad CDATA #REQUIRED>
